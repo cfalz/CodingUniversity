@@ -7,6 +7,8 @@ int main() {
     assert(test_insert());
     assert(test_resize());
     assert(test_pop());
+    assert(test_delete_element());
+    assert(test_find());
 
     cout << "ALL TESTS PASSED." << endl;
 

@@ -10,6 +10,7 @@
 using std::cout;
 using std::endl;
 
+namespace CF {
 
 template <class T>
 class Array {
@@ -24,6 +25,9 @@ class Array {
         void insert(int index, T element);
         void prepend(T element);
         T pop();
+        void delete_element(int index);
+        int find_element(T element);
+        void remove(T element);
         void print_array();
 
         //Accessors
@@ -39,11 +43,15 @@ class Array {
 
 };
 
-Array<int>* array_setup();
+}
+
+CF::Array<int>* array_setup();
 bool test_push();
 bool test_insert();
 bool test_resize();
+bool test_delete_element();
+bool test_find();
+bool test_remove();
 
 #endif //ARRAY_H
-
 
